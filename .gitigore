@@ -1,0 +1,19 @@
+cat > .gitignore << 'EOF'
+# Singularity files
+*.sif
+*_sandbox/
+*.img
+
+# Logs
+*.log
+build_*.txt
+
+# Temporary files
+*.tmp
+.Rhistory
+.RData
+
+# System files
+.DS_Store
+Thumbs.db
+EOF
