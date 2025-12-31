@@ -16,4 +16,7 @@ build_*.txt
 # System files
 .DS_Store
 Thumbs.db
+
+# Docker files
+*.tar
 EOF
