@@ -1,0 +1,17 @@
+# Use rocker/r-ver as base with R 4.5.1
+FROM rocker/r-ver:4.5.1
+
+# Set working directory
+WORKDIR /workspace
+
+# Install system dependencies needed for R packages
+RUN apt-get update && apt-get install -y \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libxml2-dev \
+    libhdf5-dev \
+    libgit2-dev \
+    libfontconfig1-dev \
+    libharfbuzz-dev \
+    libfribidi-dev \
+    && rm -rf /var/lib/apt/lists/*
